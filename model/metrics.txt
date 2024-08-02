@@ -1,0 +1,1 @@
+Model Accuracy: {accuracy * 100:.2f}%
