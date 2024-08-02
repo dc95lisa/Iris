@@ -27,7 +27,7 @@ jobs:
         run: |
           flake8 model/
 
-  Commenting out or removing the test job
+  # Commenting out or removing the test job
   test:
     runs-on: ubuntu-latest
     needs: lint
