@@ -8,6 +8,7 @@ def load_data(file_path):
     file_path = "C:/Users/User/OneDrive/Desktop/ML_Model/Iris/data/Iris.csv"
     return pd.read_csv(file_path)
 
+
 def train_model(data):
     """Train a logistic regression model."""
     X = data.drop(columns=['Species'])
@@ -23,9 +24,10 @@ def train_model(data):
 
     # Write scores to a file
     with open("metrics.txt", 'w') as outfile:
-            outfile.write("Model Accuracy: {accuracy * 100:.2f}%")
-           
+        outfile.write(f"Model Accuracy: {accuracy * 100:.2f}%")
+
     return model
+
 
 if __name__ == "__main__":
     data = load_data("data/iris.csv")
