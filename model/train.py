@@ -22,7 +22,6 @@ def train_model(data):
     predictions = model.predict(X_test)
     accuracy = accuracy_score(y_test, predictions)
     print(f"Model Accuracy: {accuracy * 100:.2f}%")
-
     # Write scores to a file
     with open("metrics.txt", 'w') as outfile:
         outfile.write(f"Model Accuracy: {accuracy * 100:.2f}%")
