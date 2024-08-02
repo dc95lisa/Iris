@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
+
 def load_data(file_path):
     """Load the dataset from a CSV file."""
     file_path = "C:/Users/User/OneDrive/Desktop/ML_Model/Iris/data/Iris.csv"
